@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/Siradjedd/argocd-cd-pipeline.git
     targetRevision: HEAD
-    path: dev
+    path: dev-stage
       
 
   destination:
