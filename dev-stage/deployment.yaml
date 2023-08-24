@@ -21,6 +21,6 @@ spec:
     spec:
       containers:
       - name: flask-container
-        image: siradjedd/basic-flask-app:latest
+        image: siradjedd/basic-flask-app:2.0
         ports:
         - containerPort: 5000
