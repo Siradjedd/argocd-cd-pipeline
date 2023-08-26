@@ -1,0 +1,5 @@
+terraform/.terraform
+terraform/sealed-secrets/.terraform
+terraform/sealed-secrets/.terraform.lock.hcl
+terraform/sealed-secrets/terraform.tfstate
+terraform/sealed-secrets/terraform.tfstate.backup
