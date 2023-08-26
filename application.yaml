@@ -3,6 +3,10 @@ kind: Application
 metadata:
   name: flask-argo-application
   namespace: argocd
+  annotations:
+    argocd-image-updater.argoproj.io/image-list: siradjedd/basic-flask-app:~2.0
+    argocd-image-updater.argoproj.io/write-back-method: git
+
 spec:
   project: default
   source:
@@ -23,3 +27,4 @@ spec:
     syncOptions:
       - Validate=false
       - CreateNamespace=true
+
