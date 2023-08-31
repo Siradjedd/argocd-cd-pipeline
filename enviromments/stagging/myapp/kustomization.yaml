@@ -1,0 +1,22 @@
+---
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+namespace: stagging
+
+bases:
+  - ../../../myapp-base
+
+
+
+
+replicas:
+  - count: 1
+    name: flask-deployment
+
+
+patches:
+  - target:
+      kind: Service
+      name: flask-svc
+    path: service-patch.yaml
