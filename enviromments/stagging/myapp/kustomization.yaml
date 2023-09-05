@@ -9,7 +9,6 @@ bases:
 
 
 
-
 replicas:
   - count: 1
     name: flask-deployment
